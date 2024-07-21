@@ -1,10 +1,3 @@
-/**
- * @author: caoyongfei(caoyongfei@baidu.com)
- * @file: linkListReverse
- * @date: 2022-04-29 16:40:48
- * @desc:
-**/
-
 package link_list
 
 // 反转链表， 循环方法

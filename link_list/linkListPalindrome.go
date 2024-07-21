@@ -1,10 +1,3 @@
-/**
- * @author: caoyongfei(caoyongfei@baidu.com)
- * @file: linkListPalindrome
- * @date: 2022-05-06 16:36:29
- * @desc:
-**/
-
 package link_list
 
 import "fmt"
@@ -16,7 +9,6 @@ func isPalindrome(head *ListNode) (bool, *ListNode) {
 
 	slow := head
 	fast := head.Next
-
 
 	// 找链表中点
 	// 慢走1 ，快走2， 快走完时， 慢走到中间(奇数个元素链表), 慢走到中间2元素的左边元素(偶数个元素链表)
@@ -68,4 +60,3 @@ func Test1(head *ListNode) {
 	fmt.Println(b)
 	fmt.Println(GetValues(newHead))
 }
-

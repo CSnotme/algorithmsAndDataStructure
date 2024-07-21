@@ -1,10 +1,3 @@
-/**
- * @author: caoyongfei(caoyongfei@baidu.com)
- * @file: linkListImplement
- * @date: 2022-04-25 11:09:53
- * @desc:
-**/
-
 package link_list
 
 // 单链表实现

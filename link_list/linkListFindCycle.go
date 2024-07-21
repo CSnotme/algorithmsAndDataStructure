@@ -1,12 +1,4 @@
-/**
- * @author: caoyongfei(caoyongfei@baidu.com)
- * @file: linkListFindCycle
- * @date: 2022-04-25 14:54:11
- * @desc:
-**/
-
 package link_list
-
 
 // 链表找环
 // ListNode 在 linkListImplement.go中定义
@@ -96,7 +88,3 @@ func hasCycleByDeleteHeadNode(head *ListNode) bool {
 
 	return hasCycleByDeleteHeadNode(nextNode)
 }
-
-
-
-

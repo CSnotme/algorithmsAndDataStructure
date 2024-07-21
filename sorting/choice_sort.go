@@ -1,6 +1,6 @@
 package sorting
 
-// 选择排序
+// 选择排序  O(n²)
 
 /*
 每次从未排序数组中找到一个最小值，放到已排序数组中
@@ -20,5 +20,3 @@ func ChoiceSort(nums []int) []int {
 
 	return nums
 }
-
-

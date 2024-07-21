@@ -1,10 +1,3 @@
-/**
- * @author: caoyongfei(caoyongfei@baidu.com)
- * @file: linkListDeleteReciprocalNode
- * @date: 2022-04-25 18:34:31
- * @desc:
-**/
-
 package link_list
 
 // 链表删除倒数第N个节点
@@ -19,7 +12,7 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	slow := head
 
 	// 快针先走n步，
-	for i:=0; i<n; i++ {
+	for i := 0; i < n; i++ {
 		fast = fast.Next
 	}
 

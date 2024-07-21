@@ -2,7 +2,6 @@ package main
 
 import (
 	doublelinklist "algorithmsAndDataStructure/double_link_list"
-	
 )
 
 //"algorithmsAndDataStructure/sorting"
@@ -18,7 +17,7 @@ import (
 func main() {
 	obj := doublelinklist.Constructor()
 	//param_1 := obj.Get(0)
-	
+
 	obj.AddAtHead(1)
 	//param_1 = obj.Get(0)
 	//fmt.Println(param_1)

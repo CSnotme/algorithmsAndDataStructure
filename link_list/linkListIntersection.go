@@ -1,10 +1,3 @@
-/**
- * @author: caoyongfei(caoyongfei@baidu.com)
- * @file: linkListIntersection
- * @date: 2022-04-25 17:21:36
- * @desc:
-**/
-
 package link_list
 
 // 链表相交问题

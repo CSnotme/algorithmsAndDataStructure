@@ -1,10 +1,3 @@
-/**
- * @author: caoyongfei(caoyongfei@baidu.com)
- * @file: linkListRemoveElement
- * @date: 2022-04-29 17:15:34
- * @desc:
-**/
-
 package link_list
 
 // 移除链表元素
@@ -24,11 +17,9 @@ func removeElements(head *ListNode, val int) *ListNode {
 	}
 }
 
-
-
 // 循环遍历
 func removeElementsByFor(head *ListNode, val int) *ListNode {
-	dummyHead := &ListNode{Val:  0, Next: nil}
+	dummyHead := &ListNode{Val: 0, Next: nil}
 	dummyHead.Next = head
 	temp := dummyHead
 	for temp.Next != nil {
