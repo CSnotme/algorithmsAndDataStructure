@@ -30,7 +30,7 @@ package leetcode
 
 /*
 思路：如下，
-1.计算每个索引最大可跳的位置，初始可跳到的位置 maxJump = num[0] + 0
+1.计算每个索引最大可跳的位置，maxJump = nums[i] + i
 2.遍历索引<=maxJump的位置，不停地更新最大可跳到的索引位置 maxJump
 3.判断maxJump是否可跳到最后索引
 索引：0,1,2,3,4
@@ -40,30 +40,20 @@ package leetcode
 */
 
 func canJump(nums []int) bool {
-	// 计算每个索引位置可跳到的最远索引
-	jumpIdx := make([]int, len(nums))
-	for i := 0; i < len(nums); i++ {
-		if nums[i] > 0 {
-			jumpIdx[i] = nums[i] + i
-		} else {
-			jumpIdx[i] = 0
-		}
-	}
 
-	lastIdx := len(nums) - 1
-	maxJump := jumpIdx[0]
+	maxJump := nums[0] + 0
 	// 遍历每个元素，
 	for i := 0; i < len(nums); i++ {
-		if maxJump < i {
+		if maxJump >= i {
+			if nums[i]+i > maxJump {
+				maxJump = nums[i] + i
+			}
+
+			if maxJump >= len(nums)-1 {
+				return true
+			}
+		} else {
 			return false
-		}
-
-		if jumpIdx[i] > maxJump {
-			maxJump = jumpIdx[i]
-		}
-
-		if maxJump >= lastIdx {
-			return true
 		}
 	}
 
